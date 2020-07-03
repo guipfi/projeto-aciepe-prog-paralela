@@ -8,6 +8,9 @@
 
 using namespace std;
 
+// Here you can define the text size
+#define TAMANHO 10000
+
 std::string random_string( size_t length )
 {
     auto randchar = []() -> char
@@ -26,7 +29,7 @@ std::string random_string( size_t length )
 
 int main() {
     // Put here the size of the string
-    string source= random_string(100000000);
+    string source= random_string(TAMANHO);
     cout<<source<<endl;;
 
     chrono::time_point<std::chrono::steady_clock> start_time = chrono::steady_clock::now();

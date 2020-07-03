@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// Here you can define the text size
 #define TAMANHO 10000
 
 string random_string( size_t length )
